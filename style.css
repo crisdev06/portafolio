@@ -1,4 +1,4 @@
-body{
+body {
 
     height: 100%;
     background-color: #f4f4f4;
@@ -6,76 +6,113 @@ body{
     color: #333;
     display: flex;
     justify-content: center;
-    
-}
-#header-container {
-    
-    border-radius: 12px;
-    justify-content: center;
-    background-color: #007acc;                 /* Fondo azul */
-    color: white;                              /* Texto blanco */
-    text-align: center;                        /* Texto centrado */
-    padding: 20px 0;                           /* Espaciado vertical */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);   /* Sombra sutil */
-    font-size:15px;                           /* Tamaño del texto */
 
 }
-div{
+
+section {
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+
+}
+
+div {
 
     margin: 0.5%;
     padding: 5px;
+
 }
-.container{
+
+#header-container {
+
+    border-radius: 12px;
+    justify-content: center;
+    background-color: #007acc;
+    /* Fondo azul */
+    color: white;
+    /* Texto blanco */
+    text-align: center;
+    /* Texto centrado */
+    padding: 10px;
+    /* Espaciado vertical */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    /* Sombra sutil */
+    font-size: 15px;
+    /* Tamaño del texto */
+
+}
+
+.container {
 
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: #608096;
+    background-color: #7ccbfd;
     border-radius: 20px;
     margin: 0.5%;
     padding: 20px;
 }
-#marco{
 
-    width: 30%;
-    padding: 10px;
-    border: 2px solid #ccc;
-    border-radius: 12px;
-    max-width: 90%;
-    margin: auto;
-}
-#information{
-
-    width: 65%;
-    padding: 10px;
+#profile-container {
+    display: flex;
+    /* Activa Flexbox */
+    align-items: center;
+    /* Centra verticalmente los elementos */
+    gap: 20px;
+    /* Espacio entre imagen e info */
+    padding: 20px;
 }
 
-#photo-profile{
-
-    max-width: 100%;
-    height: auto;
-    justify-content: center;
-    box-shadow: 0 2px 5px rgb(0 0 0 /30%);
-    border-radius: 12px;
+#marco {
+    flex-shrink: 0;
+    /* Evita que la imagen se encoja */
 }
 
+#photo-profile {
+    width: 150px;
+    /* Tamaño de imagen ajustable */
+    border-radius: 8px;
+    /* Opcional: esquinas redondeadas */
+}
 
-
-footer{
-
-    background-color: #d3d3d3;
-    border-radius: 10px;
-    justify-content: center;
-    flex: 1;
-
+#information h4 {
+    margin: 8px 0;
 }
 
 .link:hover {
-    
+
     color: red;
 }
-.logo{
+
+.logo {
 
     justify-content: center;
     height: 20px;
+}
+
+
+
+
+/* Footer */
+#footer-links-container {
+    display: flex;
+    flex-direction: column;
+    /* Acomoda los hijos uno debajo del otro */
+    align-items: center;
+    /* Centra horizontalmente */
+    text-align: center;
+    padding: 20px;
+    background-color: #d3d3d3;
+    color: #fff;
+    border-radius: 12px;
+}
+
+.footer-top {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-bottom .link img {
+    width: 24px;
+    height: 24px;
 }
