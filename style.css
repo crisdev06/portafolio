@@ -5,26 +5,17 @@ body {
     font-family: arial, sans-serif;
 
 
+
 }
 
 main {
 
     height: 100%;
-    min-width: 100%;
-    display: flex;
-    justify-content: center;
-    display: grid;
-    min-height: 100dvh;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
     grid-template-rows:
         auto 1fr auto;
-
-}
-
-section {
-
-    flex-direction: row;
-    width: auto;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 
 }
 
@@ -32,10 +23,14 @@ section {
 
 #header-container {
 
-    display: grid;
+    display: flex;
+    gap: .5rem;
     place-items: center;
+    padding: 20px;
+    flex-direction: column;
 
 }
+
 
 #header {
 
@@ -51,6 +46,7 @@ section {
     font-size: 15px;
 
 
+
 }
 
 .container {
@@ -60,8 +56,8 @@ section {
     padding: 20px;
     background-color: #7ccbfd;
     border-radius: 12px;
-    margin: 0.5%;
-    height: auto;
+    margin: 6px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 
 }
 
@@ -97,7 +93,7 @@ section {
 
 #personal-description {
 
-    height: auto;
+    height: 25%;
 }
 
 .link:hover {
