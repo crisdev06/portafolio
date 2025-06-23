@@ -1,0 +1,57 @@
+body{ /*parametros solicitados del body */
+    background-color: #f4f4f4;
+    font-family: arial, sans-serif;
+    color: #333;
+    background-image: url('/Imagenes/space.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+main {
+
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vh;
+
+}
+.marco { /*contenedor de la imagen*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vh;
+    max-width: 90%;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    margin: auto;
+}
+.marco img { /*imagen*/
+
+    max-width: 100%;
+    position:absolute;
+    height: auto;
+    align-items: center;
+  
+
+}
+.btn-volver { /*boton de regreso*/
+
+    background-color:#0f0f0f;
+    color: #fff;
+    border: solid .5px #fff;
+
+    border-radius: 10px;
+    padding: 10px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+
+}
+.btn-volver:hover {
+    background-color: #5d5d5d;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
