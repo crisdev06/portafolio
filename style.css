@@ -1,81 +1,102 @@
-body{
+body {
+
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: arial, sans-serif;
+
+
+
+}
+
+main {
 
     height: 100%;
-    background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    grid-template-rows:
+        auto 1fr auto;
+
 }
+
+
+
 #header-container {
-    
+
+    display: flex;
+    gap: .5rem;
+    place-items: center;
+    padding: 20px;
+    flex-direction: column;
+
+}
+
+
+#header {
+
+    width: fit-content;
+    display: grid;
+    place-items: center;
     border-radius: 12px;
-    justify-content: center;
-    background-color: #007acc;                 /* Fondo azul */
-    color: white;                              /* Texto blanco */
-    text-align: center;                        /* Texto centrado */
-    padding: 20px 0;                           /* Espaciado vertical */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);   /* Sombra sutil */
-    font-size:15px;                           /* Tamaño del texto */
+    background-color: #007acc;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 15px;
+
+
 
 }
-div{
 
-    margin: 0.5%;
-    padding: 5px;
-}
-.container{
+.container {
 
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: #608096;
-    border-radius: 20px;
-    margin: 0.5%;
+    background-color: #7ccbfd;
+    border-radius: 12px;
+    margin: 6px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+#profile-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
     padding: 20px;
 }
-#marco{
 
-    width: 30%;
-    padding: 10px;
+#marco {
+
+    display: flex;
     border: 2px solid #ccc;
     border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     max-width: 90%;
     margin: auto;
 }
-#information{
 
-    width: 65%;
-    padding: 10px;
-}
+#photo-profile {
 
-#photo-profile{
-
+    width: 100px;
     max-width: 100%;
     height: auto;
-    justify-content: center;
-    box-shadow: 0 2px 5px rgb(0 0 0 /30%);
     border-radius: 12px;
 }
 
+#information h4 {
+    margin: 4px 0;
+}
 
+#personal-description {
 
-footer{
-
-    background-color: #d3d3d3;
-    border-radius: 10px;
-    justify-content: center;
-    flex: 1;
-
+    height: 25%;
 }
 
 .link:hover {
-    
-    color: red;
-}
-.logo{
 
-    justify-content: center;
-    height: 20px;
+    color: red;
 }
